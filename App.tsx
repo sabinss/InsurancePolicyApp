@@ -14,8 +14,8 @@ import {Appearance} from 'react-native';
 import AppRoute from './src/navigation/appRoute';
 
 const App = () => {
+  //gives system theme configuration i.e light or dark
   const colorScheme = Appearance.getColorScheme();
-
   return (
     <ThemeProvider isDark={colorScheme == 'dark' ? true : false}>
       <AppRoute />
