@@ -6,6 +6,8 @@ import {ThemeContext} from '../context/themeContext';
 
 //screens
 import {AuthNav} from './auth';
+import Onboarding from '../screens/onboarding';
+import {Dashboard} from '../screens';
 
 const Stack = createNativeStackNavigator();
 
@@ -21,6 +23,16 @@ const AppRoute = () => {
         <Stack.Screen
           name="auth"
           component={AuthNav}
+          options={{gestureEnabled: false}}
+        />
+        <Stack.Screen
+          name="onboarding"
+          component={Onboarding}
+          options={{gestureEnabled: false}}
+        />
+        <Stack.Screen
+          name="main"
+          component={Dashboard}
           options={{gestureEnabled: false}}
         />
       </Stack.Navigator>
