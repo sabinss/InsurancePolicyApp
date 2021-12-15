@@ -6,6 +6,12 @@ export const Login = (props: any) => {
     <View>
       <Text>Login componenen is comming soon</Text>
       <Button
+        title="Login"
+        onPress={() => {
+          props.navigation.navigate('onboarding');
+        }}
+      />
+      <Button
         title="Activate Account"
         onPress={() => {
           props.navigation.navigate('signup');
